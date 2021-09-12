@@ -34,7 +34,7 @@
 
 body, 
 html {
-    height: 100vh;
+    height: 100%;
 }
 
 .img-site {
@@ -52,6 +52,7 @@ html {
     justify-content: center;
    
 }
+
 .img-site h1 {
     font: normal bold 3em var(--font-Display);
     text-shadow: 2px 2px 3px #00000052;
@@ -72,18 +73,16 @@ html {
 */
 header#container {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: space-between;
     background-color: var(--cor-2);
     font: normal normal 1em var(--font);
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 header #logo img {
     width: 64px;
-    margin-left: 20px;
+    margin-left: 5px;
 }
 
 
@@ -97,20 +96,33 @@ nav {
 nav ul#menu-principal {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    margin-right: 5px;
 }
 
 nav ul#menu-principal li {
-    padding: 10px 20px;
 }
 
 nav ul#menu-principal li a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 10px;
     text-shadow: 1px 1px 2px #00000025;
+    font-weight: 500;
+}
+
+nav ul#menu-principal li a:hover {
+    color: var(--cor-4);
+}
+
+.loginButom {
+    background-color: var(--cor-4);
+    border-radius: 3px;
+}
+
+.loginButom:hover {
+    background-color: white;
+    color: var(--cor-4);
 }
 
 /*   MAIN
@@ -120,20 +132,20 @@ main {
     max-width: 1185px;
     margin: 0 auto;
     padding: 80px 30px;
-    display: flex;
+  /*   display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start; */
     background-color: rgb(255, 255, 255);
 }
 
 main h1 {
     font: normal 500 2em var(--font);
+    text-shadow: 1px 1px 3px rgb(0 0 0 / 22%);
+    margin-top: 150px;
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    padding-bottom: 5px;
     color: var(--cor-2);
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.219);
 }
 
 main h2 {
@@ -153,20 +165,19 @@ main p {
 
 main > article > section {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 main > article > section > .item {
-    width: 370px;
-    margin: 5px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
 }
 
 main > article > section > .item img {
@@ -192,15 +203,14 @@ main #plano  {
 
 main #plano .plano {
     width: 280px;
-    background-color: var(--cor-0);
     margin: 5px;
     margin-bottom: 65px;
     padding: 0;
     position: relative;
 }
 
-main .planoH1 {
-  margin-bottom: 130px;
+main .planoP {
+    margin-bottom: 130px;
 }
 
 main #plano .plano h2 {
@@ -216,7 +226,7 @@ main #plano .plano ul {
     padding: 10px;
     line-height: 3.2em;
     font-family: var(--font-Display);
-
+    background-color: var(--cor-0);
 }
 
 main #plano h2 {
@@ -230,7 +240,7 @@ main #plano .plano .preco {
     position: absolute;
     border-radius: 100%;
     top: -60px;
-    left: 80px;
+    left: 85px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -242,9 +252,14 @@ main button {
     height: 60px;
     font-size: 1.2em;
     border: none;
-    background-color: #2ee947;
+    background-color: #16c72d;
     cursor: pointer;
-    font-family: var(--font-Display);
+    font: 600 normal 1.1em var(--font-Display);
+    color: white;
+}
+
+main button:hover {
+    background-color: #109622;
 }
 
 main #plano strong {
@@ -254,8 +269,19 @@ main #plano strong {
     font-size: 1.1em;
 }
 
-.destaque button, .destaque .preço {
+/*
+     PLANO DE DESTAQUE 
+     -----------------
+ */
+
+.destaque button {
+    background-color: rgb(177, 19, 8);
+}
+.destaque .preco {
     background-color: red;
+}
+main article.destaque button:hover{
+    background-color: #e41a1a;
 }
 
 /*   FOOTER
