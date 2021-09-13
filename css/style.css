@@ -246,14 +246,14 @@ main button {
     height: 60px;
     font-size: 1.2em;
     border: none;
-    background-color: #16c72d;
+    background-color: #109622;
     cursor: pointer;
     font: 600 normal 1.1em var(--font-Display);
     color: white;
 }
 
 main button:hover {
-    background-color: #109622;
+    background-color: #16b12b;
 }
 
 main #plano strong {
@@ -272,10 +272,10 @@ main #plano strong {
     background-color: rgb(177, 19, 8);
 }
 .destaque .preco {
-    background-color: red;
+    background-color: rgb(223, 30, 30);
 }
 main article.destaque button:hover{
-    background-color: #e41a1a;
+    background-color: #c01818;
 }
 
 
