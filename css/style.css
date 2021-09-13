@@ -18,7 +18,7 @@
     --cor-0: #D9D9D9;
     --cor-1: #A1A5A6;
     --cor-2: #353D40;
-    --cor-3: #003F63;
+    --cor-3: #18252e;
     --cor-4: #F2B138;
     
     /*   FONT
@@ -129,13 +129,7 @@ nav ul#menu-principal li a:hover {
 ----------------
 */
 main {
-    max-width: 1185px;
-    margin: 0 auto;
-    padding: 80px 30px;
-  /*   display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; */
+    padding: 80px 0;
     background-color: rgb(255, 255, 255);
 }
 
@@ -190,8 +184,8 @@ main > article > section > .item p {
     margin-bottom: 10px;
 }
 
-/*   PLANOS
-----------------
+/*  *** PLANOS *** 
+    ----------------
 */
 main #plano  {
     display: flex;
@@ -270,7 +264,7 @@ main #plano strong {
 }
 
 /*
-     PLANO DE DESTAQUE 
+     ! PLANO DE DESTAQUE 
      -----------------
  */
 
@@ -282,6 +276,68 @@ main #plano strong {
 }
 main article.destaque button:hover{
     background-color: #e41a1a;
+}
+
+
+/* !Dominio
+-------------
+*/
+#dominio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--cor-3);
+    padding-bottom: 150px;
+}
+
+#dominio h1 {
+    color: var(--cor-0);
+}
+
+#dominio p {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: var(--cor-1);
+    margin-top: 10px;
+}
+input {
+    border: none;
+}
+#dominio input.domi {
+    width: 280px;
+    height: 50px;
+    margin-top: 40px;
+    display: block;
+    font-size: 1em;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    border: 1px solid #353D40;
+    border-radius: 3px;
+}
+
+#dominio input.botao {
+    width: 170px;
+    height: 50px;
+    font-size: 1.3em;
+    margin-top: 20px;
+    display: block;
+    color: #ffffff;
+    background-color: #16c72d;
+    border: none;
+    border-radius: 3px;
+}
+
+#dominio input.botao:hover {
+    background-color: #109622;
+    cursor: pointer;
+}
+
+#dominio form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*   FOOTER
