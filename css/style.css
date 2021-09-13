@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap');
@@ -46,10 +53,19 @@ html {
 
 .img-site article {
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
    
 }
 
@@ -57,6 +73,7 @@ html {
     font: normal bold 3em var(--font-Display);
     text-shadow: 2px 2px 3px #00000052;
     color: var(--cor-4);
+    text-align: center;
 }
 
 .img-site p {
@@ -72,16 +89,22 @@ html {
 ----------------
 */
 header#container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    /* flex-wrap: wrap; */
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background-color: var(--cor-2);
     font: normal normal 1em var(--font);
 }
 
 header #logo img {
-    width: 64px;
+    max-width: 64px;
+    width: 100%;
     margin-left: 5px;
 }
 
@@ -89,25 +112,21 @@ header #logo img {
 /*   NAV
 ----------------
 */
-nav {
-  
-}
 
 nav ul#menu-principal {
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-right: 5px;
-}
-
-nav ul#menu-principal li {
 }
 
 nav ul#menu-principal li a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 10px;
-    text-shadow: 1px 1px 2px #00000025;
+    padding: 10px 5px;
+    text-shadow: 1px 1px 2px #00000036;
     font-weight: 500;
 }
 
@@ -158,20 +177,32 @@ main p {
 }
 
 main > article > section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 main > article > section > .item {
-    width: 300px;
-    margin: 10px;
+    width: 420px;
     padding: 10px;
-    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 main > article > section > .item img {
@@ -188,11 +219,21 @@ main > article > section > .item p {
     ----------------
 */
 main #plano  {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 main #plano .plano {
@@ -216,7 +257,8 @@ main #plano .plano h2 {
 main #plano .plano ul {
     text-align: center;
     list-style: none;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 10px;
     line-height: 3.2em;
     font-family: var(--font-Display);
@@ -235,9 +277,15 @@ main #plano .plano .preco {
     border-radius: 100%;
     top: -60px;
     left: 85px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     
 }
 
@@ -283,10 +331,18 @@ main article.destaque button:hover{
 -------------
 */
 #dominio {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     background-color: var(--cor-3);
     padding-bottom: 150px;
 }
@@ -313,7 +369,6 @@ input {
     display: block;
     font-size: 1em;
     padding-left: 20px;
-
     outline: none;
     border: 1px solid #353D40;
     border-radius: 3px;
@@ -337,17 +392,22 @@ input {
 }
 
 #dominio form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 /*  !Contato
     -------
  */
  #contato {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
+
  }
 
  #contato h1 {
@@ -358,35 +418,47 @@ input {
     font-size: 1.2em;
     font-weight: 500;
     color: var(--cor-1);
-    margin-top: 10px;
+    padding: 40px
 }
 
 #contato form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-   
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+
 }
 
 #contato section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    width: 600px;
-    align-items: center;
-    justify-content: space-between;
-    flex: 1;
-}
-
-#contato .email {
-    margin-left: 20px;
+    width: 60vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;    
 }
 
 #contato input.nome,
 #contato input.email {
-    width: 50%;
-    height: 35px;
-    margin-bottom: 20px;
-    margin-top: 40px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 5px;
+    height: 40px;
+    margin-bottom: 5px;
     font-size: 1em;
     padding-left: 20px;
     outline: none;
@@ -398,15 +470,20 @@ input {
     min-height: 180px;
     border: 1px solid #A1A5A6;
     outline: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     font-size: 1.2em;
-    width: 100%;
+    width: 60vw;
 }
 
 #contato input.Enviar {
-    margin-top: 20px;
-    width: 200px;
+    width: 30vw;
     height: 40px;
+    max-width: 150px;
+    margin-top: 20px;
     text-align: center;
     background-color: #16b12b;
     color: white;
